@@ -9,7 +9,7 @@ const generateContacts = async (number) => {
     contacts.push(createFakeContact());
   }
 
-  writeContacts(contacts);
+  await writeContacts(contacts);
 };
 
 generateContacts(5);
